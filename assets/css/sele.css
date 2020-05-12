@@ -60,7 +60,7 @@ section {
 }
 
 .carousel-buttons {
-    text-align: center;
+    text-align: center;margin-top: 3rem;
 }
 
 .carousel-button.previous {
