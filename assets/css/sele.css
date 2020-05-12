@@ -1,0 +1,55 @@
+.sele-landing {
+    margin-bottom: 7rem;
+    padding-top: 6rem;
+}
+
+.sele-landing h1 {
+    margin-bottom: 1.825rem;
+}
+
+.sele-landing__image img {
+    width: 100%;
+}
+
+.sele-landing__brief {
+    font-size: 1.825rem;
+    text-align: center;
+    letter-spacing: 0.825px;
+    color: #B5B5B5;
+    margin-top: 1rem;
+}
+
+.pill {
+    background-color: #9038FF;
+    color: white;
+    display: inline-block;
+    padding: 0.125rem 1rem;
+    margin-right: 1rem;
+    border-radius: 40px;
+}
+
+.pill:last-child {
+    margin-right: 0;
+}
+
+@media screen and (min-width: 768px) {
+
+    .pill {
+        font-size: 1.325rem;
+    }
+
+    .sele-landing__brief {
+        margin-top: 3rem;
+    }
+}
+
+section {
+    margin-bottom: 6rem;
+}
+
+.hire-me {
+    max-width: 350px;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+}

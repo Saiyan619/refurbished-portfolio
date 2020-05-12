@@ -64,6 +64,7 @@ textarea {
     width: 100%;
     color: white;
     margin-bottom: 1.825rem;
+    font-size: 1.325rem;
 }
 
 ::-webkit-input-placeholder {
@@ -108,15 +109,16 @@ h2 svg {
 }
 
 @media screen and (min-width: 768px) {
-.svg-absolute {
-    padding-left: 1rem;
-    position: relative;
-}
+    .svg-absolute {
+        padding-left: 1rem;
+        position: relative;
+    }
 
-.svg-absolute svg {
-    position: absolute;
-    left: -2rem;
-}
+    .svg-absolute svg {
+        position: absolute;
+        left: -2rem;
+    }
+
     h2 svg {
         width: 3rem;
         height: 3rem;
@@ -223,7 +225,7 @@ h2 svg {
         padding-bottom: 7rem;
     }
 
-    .values:before {
+    /* .values:before {
         position: absolute;
         content: '';
         background-image: url('../img/values.svg');
@@ -234,21 +236,21 @@ h2 svg {
         width: 100%;
         height: 400px;
 
-    }
+    } */
 }
 
 @media screen and (max-width: 425px) {
-    .values:before {
+    /* .values:before {
         background-position-x: 155px;
 
-    }
+    } */
 }
 
 @media screen and (max-width: 325px) {
-    .values:before {
-        background-position-x: 145px;
+    /* .values:before {
+    background-position-x: 145px;
 
-    }
+} */
 }
 
 .values__item {
@@ -368,19 +370,19 @@ h2 svg {
     width: 100%;
 }
 
-.project__item:first-child {
+.project__item.sele {
     background: linear-gradient(rgba(40, 43, 52, 0.4), rgba(40, 43, 52, 0.4)), url('../img/sofie-brand.png');
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-.project__item:nth-child(2) {
+.project__item.move {
     background: linear-gradient(rgba(140, 140, 140, 0.4), rgba(140, 140, 140, 0.4)), url('../img/sofie-brand.png');
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-.project__item:nth-child(3) {
+.project__item.kalewo {
     background: linear-gradient(rgba(40, 43,
                 52, 0.4), rgba(40, 43,
                 52, 0.4)), url('../img/sofie-brand.png');
@@ -518,8 +520,98 @@ h2 svg {
 }
 
 
+/* ******** CONTACT SECTION *********** */
+
+.contact {
+    margin-bottom: 4rem;
+}
+
+.btn__primary {
+    padding: 1.325rem 3.5rem;
+    background-color: #9038FF;
+    color: white;
+    border: 1px solid #9038FF;
+    font-size: 1.325rem;
+}
+
+.btn__primary svg {
+    margin-left: 1rem;
+}
+
+.btn__primary:hover {
+    background-color: transparent;
+    color: #9038FF;
+}
+
+.btn__primary:hover path {
+    fill: #9038FF
+}
+
+.btn__primary--outline {
+    padding: 1.325rem 3.5rem;
+    background-color: transparent;
+    color: #9038FF;
+    border: 1px solid #9038FF;
+    font-size: 1.325rem;
+}
+
+.btn__primary--outline svg {
+    margin-left: 1rem;
+}
+
+.btn__primary--outline:hover {
+    background-color: #9038FF;
+    color: white;
+}
+
+.btn__primary--outline:hover path {
+    fill: white
+}
 
 
+/* ******** FOOTER SECTION *********** */
+
+.footer {
+    background-image: url('../img/footer.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 150px;
+    padding-top: 1rem;
+}
+
+.footer__link--box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer__credits {
+    text-align: right;
+    font-size: 1.325rem;
+    color: #B5B5B5
+}
+
+@media screen and (max-width: 767px) {
+
+    .footer__link svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        min-height: 300px;
+    }
+
+    .footer__link--box {
+        max-width: 250px;
+        margin-left: unset
+    }
+}
 
 /* ANIMATIONS */
 @keyframes scroll {
