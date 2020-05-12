@@ -53,3 +53,36 @@ section {
     margin-left: auto;
     margin-right: auto;
 }
+
+.carousel {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.carousel-buttons {
+    text-align: center;
+}
+
+.carousel-button.previous {
+    margin-right: 1rem;
+}
+
+.carousel-button {
+    transition: all 400ms linear 200ms
+}
+
+.carousel-button.slick-disabled {
+    opacity: 0.5;
+}
+
+.slick-slide {
+    margin-right: 1rem;
+}
+
+.slick-slide img {
+    height: 100%;
+}
+
+.slick-slide:last-child {
+    margin-right: 0;
+}
