@@ -15,10 +15,154 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="./assets/css/main.css" />
+        <link rel="stylesheet" href="./assets/css/header.css" />
         <title>Adokiye Iruene</title>
     </head>
     <body>
-        <header></header>
+        <header class="header">
+            <nav class="nav container">
+                <ul class="nav__list d-none d-md-flex">
+                    <li class="nav__item">
+                        <a
+                            href="#"
+                            class="nav__link active"
+                            onclick="setActive(this)"
+                        >
+                            HOME
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a
+                            href="#contact"
+                            class="nav__link"
+                            onclick="setActive(this)"
+                        >
+                            GET IN TOUCH
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a
+                            href="#values"
+                            class="nav__link"
+                            onclick="setActive(this)"
+                        >
+                            VALUES
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a
+                            href="#projects"
+                            class="nav__link"
+                            onclick="setActive(this)"
+                        >
+                            PROJECTS
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav__icon d-md-none">
+                    <a href="javascript:;" onclick="toggleNavMenu()">
+                        <svg
+                            width="36"
+                            height="36"
+                            viewBox="0 0 36 36"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M31.5 18H11.5"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M31.5 9H17.5"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M31.5 27H4.5"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </a>
+                </div>
+                <div class="nav-mobile">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a
+                                href="#"
+                                class="nav__link active"
+                                onclick="setActive(this)"
+                            >
+                                HOME
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a
+                                href="#contact"
+                                class="nav__link"
+                                onclick="setActive(this)"
+                            >
+                                GET IN TOUCH
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a
+                                href="#values"
+                                class="nav__link"
+                                onclick="setActive(this)"
+                            >
+                                VALUES
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a
+                                href="#projects"
+                                class="nav__link"
+                                onclick="setActive(this)"
+                            >
+                                PROJECTS
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a
+                                class="nav__link nav__link--close"
+                                onclick="closeNavMobile()"
+                            >
+                                <svg
+                                    width="60"
+                                    height="60"
+                                    viewBox="0 0 60 60"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M45 15L15 45"
+                                        stroke="white"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M15 15L45 45"
+                                        stroke="white"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
         <main>
             <div class="container">
                 <section>
@@ -330,7 +474,7 @@
                     </div>
                 </section>
 
-                <section class="project">
+                <section class="projects" id="projects">
                     <div class="projects__title text-center text-md-left">
                         <h2 class="bebas">
                             <svg
@@ -376,14 +520,14 @@
                         </ul>
                     </div>
 
-                    <div class="projects">
+                    <div class="project__list">
                         <div class="project__item row sele">
                             <div class="col-5 col-md-6 project__item--box">
                                 <h2 class="project__title">Sele</h2>
                                 <h4 class="project__subtitle">
                                     Talent Acclerator
                                 </h4>
-                                <a class="project__link" href="#">
+                                <a class="project__link" href="sele.html">
                                     View Work
                                     <svg
                                         width="30"
@@ -419,7 +563,7 @@
                                 <h4 class="project__subtitle">
                                     Ride Hailing App
                                 </h4>
-                                <a class="project__link" href="#">
+                                <a class="project__link" href="sele.html">
                                     View Work
                                     <svg
                                         width="30"
@@ -460,7 +604,7 @@
                                     <br />
                                     Service
                                 </h4>
-                                <a class="project__link" href="#">
+                                <a class="project__link" href="sele.html">
                                     View Work
                                     <svg
                                         width="30"
@@ -496,7 +640,7 @@
                     </div>
                 </section>
 
-                <section class="row contact">
+                <section class="row contact" id="contact">
                     <div class="values__title col-md-5 svg-absolute">
                         <h2 class="bebas text-center text-md-left mb-3">
                             <svg
@@ -676,4 +820,5 @@
         integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
         crossorigin="anonymous"
     ></script>
+    <script src="./assets/js/main.js"></script>
 </html>

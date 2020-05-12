@@ -85,8 +85,9 @@ textarea {
 }
 
 .bebas {
-
-    font-family: 'Bebas Neue', Helvetica, sans-serif;
+    font-family: 'Bebas Neue',
+        Helvetica,
+        sans-serif;
 }
 
 h1 {
@@ -129,7 +130,7 @@ h2 svg {
 /* ******** LANDING SECTION *********** */
 
 .landing {
-    min-height: 100vh;
+    min-height: calc(100vh - 8rem);
     height: 100%;
     position: relative;
     padding-top: 3rem;
@@ -139,7 +140,7 @@ h2 svg {
 @media screen and (min-width: 768px) {
     .landing {
         min-height: 675px;
-        height: 100vh;
+        height: calc(100vh - 8rem);
     }
 }
 
@@ -222,7 +223,7 @@ h2 svg {
 @media screen and (max-width: 767px) {
     .values {
         position: relative;
-        padding-bottom: 7rem;
+        padding-bottom: 4rem;
     }
 
     /* .values:before {
@@ -315,8 +316,9 @@ h2 svg {
 
 
 /* ******** PROJECTS SECTION *********** */
-.project {
-    margin-bottom: 7rem;
+.projects {
+    margin-bottom: 6rem;
+    padding-top: 2rem;
 }
 
 .projects__title {
@@ -524,6 +526,7 @@ h2 svg {
 
 .contact {
     margin-bottom: 4rem;
+    padding-top: 2rem;
 }
 
 .btn__primary {

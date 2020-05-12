@@ -12,7 +12,7 @@
 }
 
 .sele-landing__brief {
-    font-size: 1.825rem;
+    font-size: 1.325rem;
     text-align: center;
     letter-spacing: 0.825px;
     color: #B5B5B5;
@@ -40,6 +40,7 @@
 
     .sele-landing__brief {
         margin-top: 3rem;
+        font-size: 1.825rem;
     }
 }
 
@@ -60,19 +61,31 @@ section {
 }
 
 .carousel-buttons {
-    text-align: center;margin-top: 3rem;
-}
-
-.carousel-button.previous {
-    margin-right: 1rem;
+    text-align: center;
+    margin-top: 3rem;
 }
 
 .carousel-button {
     transition: all 400ms linear 200ms
 }
 
+.carousel-button.previous {
+    margin-right: 1rem;
+}
+
 .carousel-button.slick-disabled {
     opacity: 0.5;
+}
+
+@media screen and (max-width: 767px) {
+
+    .carousel-buttons {
+        margin-top: 1.5rem;
+    }
+
+    .carousel-button svg {
+        width: 25px;
+    }
 }
 
 .slick-slide {

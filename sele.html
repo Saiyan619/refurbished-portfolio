@@ -27,11 +27,155 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="./assets/css/main.css" />
+        <link rel="stylesheet" href="./assets/css/header.css" />
         <link rel="stylesheet" href="./assets/css/sele.css" />
         <title>Adokiye Iruene - Sele</title>
     </head>
     <body>
-        <header></header>
+        <header class="header">
+            <nav class="nav container">
+                <ul class="nav__list d-none d-md-flex">
+                    <li class="nav__item">
+                        <a
+                            href="index.html"
+                            class="nav__link active"
+                            onclick="setActive(this)"
+                        >
+                            HOME
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a
+                            href="index.html#contact"
+                            class="nav__link"
+                            onclick="setActive(this)"
+                        >
+                            GET IN TOUCH
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a
+                            href="index.html#values"
+                            class="nav__link"
+                            onclick="setActive(this)"
+                        >
+                            VALUES
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a
+                            href="index.html#projects"
+                            class="nav__link"
+                            onclick="setActive(this)"
+                        >
+                            PROJECTS
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav__icon d-md-none">
+                    <a href="javascript:;" onclick="toggleNavMenu()">
+                        <svg
+                            width="36"
+                            height="36"
+                            viewBox="0 0 36 36"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M31.5 18H11.5"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M31.5 9H17.5"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M31.5 27H4.5"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </a>
+                </div>
+                <div class="nav-mobile">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a
+                                href="index.html#"
+                                class="nav__link active"
+                                onclick="setActive(this)"
+                            >
+                                HOME
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a
+                                href="index.html#contact"
+                                class="nav__link"
+                                onclick="setActive(this)"
+                            >
+                                GET IN TOUCH
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a
+                                href="index.html#values"
+                                class="nav__link"
+                                onclick="setActive(this)"
+                            >
+                                VALUES
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a
+                                href="index.html#projects"
+                                class="nav__link"
+                                onclick="setActive(this)"
+                            >
+                                PROJECTS
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a
+                                class="nav__link nav__link--close"
+                                onclick="closeNavMobile()"
+                            >
+                                <svg
+                                    width="60"
+                                    height="60"
+                                    viewBox="0 0 60 60"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M45 15L15 45"
+                                        stroke="white"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M15 15L45 45"
+                                        stroke="white"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
         <main>
             <div class="container">
                 <section>
@@ -360,5 +504,6 @@
         type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <script src="./assets/js/main.js"></script>
     <script src="./assets/js/carousel.js"></script>
 </html>
