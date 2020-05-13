@@ -52,7 +52,7 @@
     height: 100%;
     background-color: #121212;
     top: 0;
-    left: 100vh;
+    left: 100vw;
     display: flex;
     align-items: center;
     transition: all 150ms linear;
@@ -84,7 +84,7 @@
     }
 
     .nav {
-        padding-top: 4rem;
+        padding-top: 2rem;
         padding-bottom: 2rem;
         padding-left: 15px;
         margin-right: auto;

@@ -52,7 +52,7 @@ h6 {
 @media screen and (min-width: 768px) {
 
     h1 {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 }
 
@@ -130,18 +130,12 @@ h2 svg {
 /* ******** LANDING SECTION *********** */
 
 .landing {
-    min-height: calc(100vh - 8rem);
+    min-height: 100vh;
+    margin-top: -60px;
     height: 100%;
     position: relative;
     padding-top: 3rem;
-    padding-bottom: 4rem;
-}
-
-@media screen and (min-width: 768px) {
-    .landing {
-        min-height: 675px;
-        height: calc(100vh - 8rem);
-    }
+    padding-bottom: 2rem;
 }
 
 .landing__title {
@@ -149,7 +143,7 @@ h2 svg {
 }
 
 .landing__hero {
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
     line-height: 1.61;
 }
 
@@ -168,19 +162,21 @@ h2 svg {
 
 .landing__image {
     position: relative;
-    max-width: 480px;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .landing__image:before {
     content: '';
     background-color: #9038FF;
-    width: 168px;
-    height: 168px;
+    width: 100px;
+    height: 100px;
     z-index: -1;
     border-radius: 26px;
     position: absolute;
-    bottom: -50px;
-    right: -50px;
+    bottom: -20px;
+    right: -20px;
 }
 
 .landing__image img {
@@ -194,7 +190,7 @@ h2 svg {
     left: 0;
     right: 0;
     text-align: center;
-    bottom: 4rem;
+    bottom: -1.5rem;
 }
 
 .landing__scroll a {
@@ -208,6 +204,32 @@ h2 svg {
 
 .landing__scroll svg:last-child {
     animation: scroll-long 1000ms ease-in-out 720ms infinite alternate none;
+}
+
+@media screen and (min-width: 768px) {
+    .landing {
+        padding-top: 0;
+        padding-bottom: 4rem;
+        min-height: 675px;
+        height: calc(100vh - 8rem);
+        margin-top: unset;
+    }
+
+    .landing__scroll {
+        bottom: 4rem;
+    }
+
+    .landing__image:before {
+        width: 168px;
+        height: 168px;
+        bottom: -50px;
+        right: -50px;
+    }
+
+    .landing__image {
+        margin-right: unset;
+        max-width: 400px;
+    }
 }
 
 /* ******* VALUES SECTION ******** */
