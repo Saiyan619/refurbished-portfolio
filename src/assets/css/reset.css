@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: white;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.5;
+    color: #333;
+}
+
+html,
+body {
+    font-size: 12px;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    letter-spacing: 1.3px;
+    color: white;
+    margin-bottom: 0;
+}
+
+small {
+    font-size: 85%;
+}
+
+button:focus {
+    outline: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    html,
+    body {
+        font-size: 16px;
+    }
+}
