@@ -23,4 +23,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
->>>>>>> ed60054 (Initial commit - Refactored version)
+
+# Env files
+.env
+.env.*.local
