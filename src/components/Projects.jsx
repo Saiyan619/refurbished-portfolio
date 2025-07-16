@@ -4,25 +4,25 @@ import { ExternalLink, Github } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-featured e-commerce platform with real-time inventory management, payment processing, and advanced analytics dashboard.',
-      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Sele',
+      description: 'Talent Acclerator',
+      image: './assets/img/sele.png',
       tech: ['React', 'Node.js', 'PostgreSQL', 'Stripe', 'AWS'],
       github: 'https://github.com',
       demo: 'https://example.com',
     },
     {
-      title: 'Task Management App',
-      description: 'Collaborative task management application with real-time updates, team collaboration features, and advanced project tracking.',
-      image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: '9Move',
+      description: 'Ride Hailing App',
+      image: './assets/img/nine-move.png',
       tech: ['Vue.js', 'Express.js', 'MongoDB', 'Socket.io', 'Docker'],
       github: 'https://github.com',
       demo: 'https://example.com',
     },
     {
-      title: 'AI-Powered Analytics Dashboard',
-      description: 'Advanced analytics platform with machine learning insights, real-time data visualization, and predictive analytics.',
-      image: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Kalewo',
+      description: 'Live Streaming service',
+      image: './assets/img/kalewo.png',
       tech: ['React', 'Python', 'FastAPI', 'TensorFlow', 'D3.js'],
       github: 'https://github.com',
       demo: 'https://example.com',
@@ -74,7 +74,7 @@ const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
+                  className="w-full h-72 object-cover transition-transform duration-300 hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
                   <a

@@ -21,7 +21,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="font-bold text-xl text-gray-900 dark:text-white">
-            Paul Adokiye
+           Adokiye Iruene
           </div>
 
           {/* Desktop Navigation */}
